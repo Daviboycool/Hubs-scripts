@@ -66,7 +66,7 @@ scripts:CreateButton("aimbot", function()
 loadstring(game:HttpGet('https://rentry.co/forkoritothegoat/raw'))()
 end)
 
-local hubs = others:NewSection("hubs")
+local hubs = PhantomForcesWindow:NewSection("hubs")
 
 hubs:CreateButton("kadu hub", function()
 getgenv().AutoReport = true -- turn off if executor blocks ReportAbuse function or if you just want it off
