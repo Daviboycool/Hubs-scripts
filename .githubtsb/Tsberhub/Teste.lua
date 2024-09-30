@@ -2,9 +2,9 @@ local Library = loadstring(Game:HttpGet("https://raw.githubusercontent.com/blood
 
 
 
-game.StarterGui:SetCore("SendNotification",  { Title = "Er hub"; Text = "wait 5 seconds to load "; Icon = ""; Duration = 5; })
+game.StarterGui:SetCore("SendNotification",  { Title = "Er hub"; Text = "wait 5 seconds to load "; Icon = "rbxassetid://4483345998"; Duration = 5; })
 wait(5)
-game.StarterGui:SetCore("SendNotification",  { Title = "Er hub"; Text = "loaded "; Icon = ""; Duration = 3 })
+game.StarterGui:SetCore("SendNotification",  { Title = "Er hub"; Text = "loaded "; Icon = "rbxassetid://4483345998"; Duration = 3 })
 
 
 
@@ -59,9 +59,8 @@ local args = {
 }
 end)
 
-local others = Library:NewWindow("others")
 
-local scripts = others:NewSection("scripts")
+local scripts = PhantomForcesWindow:NewSection("scripts")
 
 scripts:CreateButton("aimbot", function()
 loadstring(game:HttpGet('https://rentry.co/forkoritothegoat/raw'))()
@@ -83,12 +82,12 @@ hubs:CreateButton("hub", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/JayXSama/ray-makk/main/Loader"))()
 end)
 
-local credits = Library:NewWindow("credits")
 
-local Credits = credits:NewSection("credits")
+
+local Credits = PhantomForcesWindow:NewSection("credits")
 
 Credits:CreateButton("view credits", function()
-game.StarterGui:SetCore("SendNotification",  { Title = "credits "; Text = "made by davi"; Icon = ""; Duration = 15 })
+game.StarterGui:SetCore("SendNotification",  { Title = "credits "; Text = "made by davi"; Icon = "rbxassetid://4483345998"; Duration = 15 })
 end)
 
 Credits:CreateButton("view support games", function()
@@ -96,12 +95,10 @@ local DiscordLib = loadstring(game:HttpGet"https://raw.githubusercontent.com/daw
 
 local win = DiscordLib:Window("game support")
 
-local serv = win:Server("games", "")
+local serv = win:Server("games", "rbxassetid://4483345998")
 
 local btns = serv:Channel("games")
 
-btns:Label("break in 2 in progress")
-btns:Label("break in 1 in progress")
-btns:Label("universal in progress")
+btns:Label("universal ")
 
 end)
